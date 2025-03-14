@@ -2,7 +2,7 @@ package clashclass.commons;
 
 public record Vector2(double x, double y) {
 
-    public double distance(Vector2 other) {
+    public double distance(final Vector2 other) {
         final double deltaX = x - other.x;
         final double deltaY = y - other.y;
 

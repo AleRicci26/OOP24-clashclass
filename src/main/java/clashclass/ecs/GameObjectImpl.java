@@ -10,9 +10,9 @@ import java.util.Set;
  */
 public class GameObjectImpl implements GameObject {
     private final int uniqueId;
-    private Set<Component> components;
+    private final Set<Component> components;
 
-    private static int uniqueIdProgression = 0;
+    private static int uniqueIdProgression;
 
     /**
      * Constructs the GameObject
@@ -34,7 +34,7 @@ public class GameObjectImpl implements GameObject {
      * {@inheritDoc}
      */
     @Override
-    public final void addComponent(Component component) {
+    public final void addComponent(final Component component) {
         this.components.add(component);
     }
 
@@ -42,7 +42,7 @@ public class GameObjectImpl implements GameObject {
      * {@inheritDoc}
      */
     @Override
-    public final <T extends Component> Optional<T> getComponentOfType(Class<T> componentType) {
+    public final <T extends Component> Optional<T> getComponentOfType(final Class<T> componentType) {
         return this.components.stream()
                 .filter(componentType::isInstance)
                 .map(componentType::cast)

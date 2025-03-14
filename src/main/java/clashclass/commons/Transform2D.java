@@ -19,15 +19,15 @@ public class Transform2D extends BaseComponent {
         return this.scale;
     }
 
-    public void setPosition(Vector2 position) {
+    public void setPosition(final Vector2 position) {
         this.position = position;
     }
 
-    public void setRotation(Vector2 rotation) {
+    public void setRotation(final Vector2 rotation) {
         this.rotation = rotation;
     }
 
-    public void setScale(Vector2 scale) {
+    public void setScale(final Vector2 scale) {
         this.scale = scale;
     }
 }

@@ -8,7 +8,7 @@ public abstract class BaseComponent implements Component {
     }
 
     @Override
-    public final void setGameObjectReference(GameObject gameObject) {
+    public final void setGameObjectReference(final GameObject gameObject) {
         this.gameObject = gameObject;
     }
 

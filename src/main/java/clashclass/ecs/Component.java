@@ -1,9 +1,9 @@
 package clashclass.ecs;
 
 public interface Component {
-    public void setGameObjectReference(GameObject gameObject);
+    void setGameObjectReference(GameObject gameObject);
 
-    public void initialize();
+    void initialize();
 
-    public void update(float deltaTime);
+    void update(float deltaTime);
 }

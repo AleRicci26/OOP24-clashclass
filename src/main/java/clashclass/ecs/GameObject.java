@@ -11,13 +11,13 @@ public interface GameObject {
      * Gets the unique id.
      * @return unique id
      */
-    public int getUniqueId();
+    int getUniqueId();
 
     /**
      * Adds a component to the set of components.
      * @param component component to add
      */
-    public void addComponent(Component component);
+    void addComponent(Component component);
 
     /**
      * Tries to the get a component of a specific type.
@@ -31,5 +31,5 @@ public interface GameObject {
      * Gets all the components
      * @return all the components
      */
-    public Set<Component> getComponents();
+    Set<Component> getComponents();
 }
