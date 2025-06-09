@@ -11,3 +11,6 @@
 
 # Binary files should be left untouched
 *.jar           binary
+
+# Pdf files should be treated as binary
+*.pdf binary
